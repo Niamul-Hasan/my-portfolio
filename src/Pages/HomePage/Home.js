@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import './Home.css';
 import file from '../../assets/Niamul Hasan Zead_Resume.pdf';
+import ContactForm from './Form/ContactForm';
 
 const Home = () => {
     const resume = 'https://drive.google.com/uc?export=download&id=1cvwLB7jmqRfBTgb-wBsznSms3R58fb0m';
@@ -28,6 +29,8 @@ const Home = () => {
                 </div>
                 <div className="cylon_eye"></div>
             </div>
+
+            <ContactForm></ContactForm>
 
 
         </div>
