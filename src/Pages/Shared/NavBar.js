@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     const navItem = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><Link to='/portfolio'>About</Link></li>
+        <li><Link to='/portfolio'>Portfolio</Link></li>
+        <li><Link to='/about'>About</Link></li>
     </>
 
     return (
@@ -19,7 +19,7 @@ const NavBar = () => {
                         {navItem}
                     </ul>
                 </div>
-                <Link to='/' class="btn btn-ghost normal-case text-xl font-serif">Niamul Hasan</Link>
+                <Link to='/' class="btn btn-ghost normal-case text-xl font-mono">Niamul Hasan</Link>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">

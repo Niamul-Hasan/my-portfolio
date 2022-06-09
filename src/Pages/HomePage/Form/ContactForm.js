@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div class="hero min-h-screen bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="text-center lg:text-left">
-                        <h1 class="text-5xl font-bold">Login now!</h1>
+                        <h1 class="text-5xl font-bold">Contact Me!</h1>
 
                     </div>
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
