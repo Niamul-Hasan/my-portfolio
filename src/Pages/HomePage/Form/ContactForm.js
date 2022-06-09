@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import './ContactForm.css';
 
 const ContactForm = () => {
     const form = useRef();
@@ -18,7 +19,7 @@ const ContactForm = () => {
             });
     }
     return (
-        <div >
+        <div className='container'>
             <form ref={form} onSubmit={sendEmail}
                 className='d-flex flex-column justify-content-center align-items-center p-5'
             >
