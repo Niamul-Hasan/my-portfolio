@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import img from '../../../../assets/zead01.png';
+import img from '../../../../assets/zead01.jpg';
 import { BsFillCloudDownloadFill } from 'react-icons/bs';
 
 const Banner = () => {
@@ -9,7 +9,7 @@ const Banner = () => {
         <div>
             <div className="hero bg-white">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img src={img} style={{ height: '400px', width: '250px' }} className="max-w-sm rounded-lg shadow-2xl" alt='' />
+                    <img src={img} style={{ height: '400px', width: '250px' }} className="mask mask-hexagon max-w-sm rounded-lg shadow-2xl" alt='' />
                     <div>
                         <div className="view_port">
                             <div className="polling_message">

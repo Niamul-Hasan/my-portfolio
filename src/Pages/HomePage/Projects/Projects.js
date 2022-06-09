@@ -1,31 +1,37 @@
 import React from 'react';
+import pic1 from '../../../assets/pchunk.PNG';
+import pic2 from '../../../assets/hiking.PNG';
+import pic3 from '../../../assets/dental.PNG';
+import Project from './Project';
 
 const Projects = () => {
+    const projects = [
+        {
+            id: 1,
+            name: ' PC HUNK',
+            img: pic1
+        },
+        {
+            id: 1,
+            name: 'Hiking House',
+            img: pic2
+        },
+        {
+            id: 1,
+            name: 'Your Private Dentist',
+            img: pic3
+        }
+    ]
     return (
         <div className='container my-5 mx-auto'>
             <h1 className='text-center uppercase text-3xl font-bold'>Here is my projects</h1>
-            <div>
-                <div class="carousel w-full">
-                    <div id="item1" class="carousel-item w-full">
-                        <img src="https://pc-hunk.web.app/" class="w-full" alt='' />
-                    </div>
-                    <div id="item2" class="carousel-item w-full">
-                        <img src="https://api.lorem.space/image/car?w=800&h=200&hash=500B67FB" class="w-full" alt='' />
-                    </div>
-                    <div id="item3" class="carousel-item w-full">
-                        <img src="https://api.lorem.space/image/car?w=800&h=200&hash=A89D0DE6" class="w-full" alt='' />
-                    </div>
-                    <div id="item4" class="carousel-item w-full">
-                        <img src="https://api.lorem.space/image/car?w=800&h=200&hash=225E6693" class="w-full" alt='' />
-                    </div>
-                </div>
-                <div class="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" class="btn btn-xs">1</a>
-                    <a href="#item2" class="btn btn-xs">2</a>
-                    <a href="#item3" class="btn btn-xs">3</a>
-                    <a href="#item4" class="btn btn-xs">4</a>
-                </div>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-3'>
+                {projects.map(project => <Project
+                    key={project.id}
+                    project={project}
+                ></Project>)}
             </div>
+
         </div>
     );
 };

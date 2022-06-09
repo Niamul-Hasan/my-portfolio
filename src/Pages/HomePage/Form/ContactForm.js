@@ -14,6 +14,7 @@ const ContactForm = () => {
         emailjs.sendForm(service_ID, templet_ID, form.current, public_key)
             .then((result) => {
                 console.log(result.text);
+                alert('Your messege is send');
             }, (error) => {
                 console.log(error.text);
             });
@@ -35,7 +36,7 @@ const ContactForm = () => {
                                     <label class="label">
                                         <span class="label-text">Name</span>
                                     </label>
-                                    <input type="text" name="from_name" class="input input-bordered" />
+                                    <input type="text" name="from_name" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
@@ -47,7 +48,7 @@ const ContactForm = () => {
                                     <label class="label">
                                         <span class="label-text">Message</span>
                                     </label>
-                                    <textarea type="text" name='message' class="input input-bordered" />
+                                    <textarea type="text" name='message' class="input input-bordered" required />
                                 </div>
                                 <div class="form-control mt-6">
                                     <input type="submit" value='Submit' class="btn btn-success" />
