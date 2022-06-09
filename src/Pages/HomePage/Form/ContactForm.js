@@ -17,20 +17,46 @@ const ContactForm = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+        e.target.reset();
     }
     return (
         <div className='container'>
-            <form ref={form} onSubmit={sendEmail}
-                className='d-flex flex-column justify-content-center align-items-center p-5'
-            >
-                <label>Name</label>
-                <input type="text" name="from_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" className='mt-2' />
-            </form>
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-5xl font-bold">Login now!</h1>
+
+                    </div>
+                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div class="card-body">
+                            <form ref={form} onSubmit={sendEmail}>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Name</span>
+                                    </label>
+                                    <input type="text" name="from_name" class="input input-bordered" />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Email</span>
+                                    </label>
+                                    <input type="email" name='user_email' class="input input-bordered" />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Message</span>
+                                    </label>
+                                    <textarea type="text" name='message' class="input input-bordered" />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <input type="submit" value='Submit' class="btn btn-success" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>

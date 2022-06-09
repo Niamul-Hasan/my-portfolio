@@ -19,7 +19,7 @@ const NavBar = () => {
                         {navItem}
                     </ul>
                 </div>
-                <Link to='/' class="btn btn-ghost normal-case text-xl">Niamul Hasan</Link>
+                <Link to='/' class="btn btn-ghost normal-case text-xl font-serif">Niamul Hasan</Link>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
