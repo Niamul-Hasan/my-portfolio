@@ -22,7 +22,7 @@ const ContactForm = () => {
         e.target.reset();
     }
     return (
-        <div className='container'>
+        <div className='container mx-auto'>
             <div class="hero min-h-screen bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="text-center lg:text-left">
