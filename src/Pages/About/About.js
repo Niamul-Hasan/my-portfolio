@@ -7,7 +7,7 @@ import Footer from '../Shared/Footer';
 
 
 const About = () => {
-    const resume = 'https://drive.google.com/uc?export=download&id=1cvwLB7jmqRfBTgb-wBsznSms3R58fb0m';
+    const resume = 'https://drive.google.com/uc?export=download&id=1_AziCHIPtW-XbCCGV_Hf7g8bZq8E-YA8';
     return (
         <div>
             <div class="hero  bg-base-200">

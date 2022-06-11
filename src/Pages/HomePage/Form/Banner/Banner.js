@@ -5,7 +5,7 @@ import { BsFillCloudDownloadFill } from 'react-icons/bs';
 import Typewriter from './Typewriter';
 
 const Banner = () => {
-    const resume = 'https://drive.google.com/uc?export=download&id=1cvwLB7jmqRfBTgb-wBsznSms3R58fb0m';
+    const resume = 'https://drive.google.com/uc?export=download&id=1_AziCHIPtW-XbCCGV_Hf7g8bZq8E-YA8';
     return (
         <div>
             <div className="hero bg-white">
