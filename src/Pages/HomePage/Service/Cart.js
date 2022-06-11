@@ -4,7 +4,7 @@ const Cart = ({ service }) => {
     const { name, about, gif } = service;
     return (
         <div>
-            <div class="card lg:max-w-lg sm:max-w-4/5 bg-base-200 shadow-xl">
+            <div class="card lg:max-w-lg sm:max-w-4/5 bg-base-300 shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title text-2xl">{name}</h2>
                     <p>{about}.</p>
