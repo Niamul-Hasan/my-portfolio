@@ -2,6 +2,7 @@ import React from 'react';
 import './Banner.css';
 import img from '../../../../assets/zead01.jpg';
 import { BsFillCloudDownloadFill } from 'react-icons/bs';
+import Typewriter from './Typewriter';
 
 const Banner = () => {
     const resume = 'https://drive.google.com/uc?export=download&id=1cvwLB7jmqRfBTgb-wBsznSms3R58fb0m';
@@ -17,6 +18,9 @@ const Banner = () => {
                             </div>
                             <div className="cylon_eye"></div>
                         </div>
+
+                        <Typewriter></Typewriter>
+
                         <a href={resume} rel="noopener noreferrer">
                             <button className="btn btn-primary mt-4 text-xl"><span className='mr-3'>Download Resume</span> <BsFillCloudDownloadFill /></button>
                         </a>

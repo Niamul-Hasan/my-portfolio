@@ -19,6 +19,7 @@ import { SiMongodb } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 import { SiFirebase } from 'react-icons/si';
+import Footer from '../Shared/Footer';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -137,12 +138,14 @@ const ProjectDetails = () => {
                     {project.features}
                 </div>
                 <div className='px-5'>
-                    <h1 className='uppercase text-2xl font-semibold text-teal-600 mb-5'>Tools and Technologies</h1>
+                    <h1 className='uppercase text-2xl font-semibold text-teal-600 mb-5'>
+                        Tools and Technologies</h1>
                     {project.technologies}
 
                 </div>
 
             </div>
+            <Footer></Footer>
         </div>
     );
 };
