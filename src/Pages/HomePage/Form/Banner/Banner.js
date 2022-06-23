@@ -14,7 +14,7 @@ const Banner = () => {
                     <div>
                         <div className="view_port">
                             <div className="polling_message">
-                                <h1 className="lg:text-5xl font-bold sm:text-4xl uppercase">welcome to my portfolio</h1>
+                                <h1 className="lg:text-5xl font-bold sm:text-5xl uppercase">welcome to my portfolio</h1>
                             </div>
                             <div className="cylon_eye"></div>
                         </div>

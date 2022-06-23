@@ -16,7 +16,7 @@ const Service = () => {
         {
             id: 2,
             name: 'Node.js Project',
-            about: 'The most open source server environment for bulding a full stack web application',
+            about: 'Popular open source server environment for bulding a full stack web application',
             gif: gif2
         },
         {
